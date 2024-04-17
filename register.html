@@ -12,7 +12,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <script src="assets/js/auth/register.js" defer></script>
+        <script src="/js/auth/register.js" type="module"></script>
 
     </head>
     <body class="bg-secondary">
@@ -28,7 +28,11 @@
                                     </h3>
                                 </div>
                                     <div class="card-body">
-                                        <form id="form-register">
+                                        <!-- Notification -->
+                                        <div class="alert alert-success d-none" role="alert"></div>
+                                        <div class="alert alert-danger d-none" role="alert"></div>
+                                        <!-- Registration Form -->
+                                        <form id="form_register">
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
@@ -158,7 +162,8 @@
                                             </div>
                                             <div class="mt-4 mb-0">
                                                 <div class="d-grid">
-                                                    <button class="btn btn-primary btn-block" type="submit">
+                                                    <button class="btn btn-primary btn-block d-flex align-items-center justify-content-center" 
+                                                            type="submit">
                                                     Create Account
                                                     </button>
                                                 </div>

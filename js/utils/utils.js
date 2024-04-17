@@ -12,7 +12,7 @@ function successNotification(message, seconds = "") {
     document.querySelector(".alert-success").classList.add("d-block");
     document.querySelector(".alert-success").innerHTML = message;
 
-    if(seconds !=""){
+    if(seconds != ""){
         setTimeout(function () {
             document.querySelector(".alert-success").classList.remove("d-block");
             document.querySelector(".alert-success").classList.add("d-none");
@@ -25,7 +25,7 @@ function errorNotification(message, seconds = "") {
     document.querySelector(".alert-danger").classList.add("d-block");
     document.querySelector(".alert-danger").innerHTML = message;
 
-    if(seconds !="") {
+    if(seconds != "") {
         setTimeout(function () {
             document.querySelector(".alert-danger").classList.remove("d-block");
             document.querySelector(".alert-danger").classList.add("d-none");

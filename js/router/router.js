@@ -1,16 +1,15 @@
 function setRouter() {
-    alert(window.location.pathname)
     switch (window.location.pathname) {
-        case ("/"):
-        case ("/login.html"):
-        case ("/register.html"):
+        case "/login.html":
+        case "/":
+        case "/register.html":
         if(localStorage.getItem("token")) {
-            window.location.pathname = ("/index.html")
+            window.location.pathname = "/index.html";
         }
         break;
-        case ("/index,html"):
+        case "/index.html":
             if(localStorage.getItem("token") == null) {
-                window.location.pathname = ("/login.html")
+                window.location.pathname = "/login.html";
             }
         break;
 

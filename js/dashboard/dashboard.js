@@ -18,9 +18,9 @@ btn_logout.onclick = async () => {
         /* Clear Token */
         localStorage.clear();
 
-        successNotification("Logout Successfully!");
+        successNotification("Logout Successful!");
         /* Redirect Page */
-        window.location.href = "/login.html";
+        window.location.pathname = "/login.html";
 
     // Get response if 400 or 500 status code
     } else {

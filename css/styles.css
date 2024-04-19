@@ -235,3 +235,10 @@
 .sb-sidenav-light .sb-sidenav-footer {
   background-color: #e9ecef;
 }
+
+.avatar {
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}

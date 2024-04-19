@@ -16,7 +16,7 @@ form_register.onsubmit = async (e) => {
     const formData = new FormData(form_register);
 
     // Fetch User API user register endpoint
-    const response = await fetch(url + "/api/user", {
+    const response = await fetch(backendURL + "/api/user", {
         method: "POST",
         headers: {
             Accept: "application/json",
